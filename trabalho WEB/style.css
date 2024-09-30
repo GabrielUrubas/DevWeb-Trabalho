@@ -3,17 +3,145 @@
     padding: 0;
 }
 
+/* FONTES */
 .bebas-neue-regular {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
+
+.montserrat-Paragrafo {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.fredoka-Titulo {
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+/* MENU E FUNDO*/
 .fundo {
     background-color: rgb(252, 238, 249);
 }
-#comeco {
- padding-top: 80px;
+
+.menu {
+    background-color: rgb(200, 159, 238);
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
 }
+
+.imgMenu {
+    position: absolute;
+    left: 20px;
+    width: 125px;
+    height: auto;
+    transform: translateY(-50%);
+}
+
+#menu-horizontal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu-horizontal ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#menu-horizontal ul li {
+    margin: 0 15px;
+}
+
+.menuBotton {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 3.5vh;
+    background-color: rgb(153, 51, 153);
+    border: 2px solid rgb(252, 2, 227);
+    border-radius: 10px;
+    font-weight: bolder;
+    color: rgb(9, 174, 203);
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+.menuBotton:hover {
+    background-color: rgb(102, 54, 107);
+}
+
+/*PAGINA INCIAL*/
+.container {
+    display: flex;
+    align-items: flex-start;
+    margin: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#inicio {
+    padding-top: 80px;
+}
+
+.texto {
+    width: 100%;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(183, 76, 138);
+}
+
+.img-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-left: 100px;
+
+}
+
+.grid img {
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.img-flex {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin: 0 auto;
+    width: 100%;
+    
+}
+
+.image {
+    width: 400px;
+    height: 500px;
+}
+
+/* Catalogo*/
+#comeco {
+    padding-top: 80px;
+}
+
 .container2 {
     display: flex;
     align-items: center;
@@ -24,23 +152,26 @@
 }
 
 .itens-container {
-    display: flex; 
-    overflow: hidden; 
-    flex: 1; 
+    display: flex;
+    overflow: hidden;
+    flex: 1;
     justify-content: flex-start;
-    margin: 0 20px; 
+    margin: 0 20px;
 }
+
 .move {
-    background-color: #f0f0f0; 
-    border: none; 
-    padding: 10px 20px; 
-    cursor: pointer; 
-    font-size: 18px; 
-    border-radius: 5px; 
+    background-color: #f0f0f0;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
 }
+
 #Binicio {
     margin-right: auto;
 }
+
 #Bfim {
     margin-left: auto;
 }
@@ -59,103 +190,38 @@ button {
     list-style-type: none;
 }
 
-.menu {
-    background-color: rgb(200, 159, 238);
-    position: fixed;
-    width: 100%;
-    height: 50px;
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    padding: 10px 0;  
-}
 
-.imgMenu {
-    position: absolute;
-    left: 20px; 
-    width: 125px; 
-    height: auto;
-    transform: translateY(-50%); 
-}
-.catalogoimg{
+.catalogoimg {
     width: 45vh;
 }
 
-#menu-horizontal {
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
+#titlecat{
+    font-family: "Fredoka", sans-serif;
+    color: rgb(128, 2, 98);
+}
+.tcatalogo {
+    font-family: "Fredoka", sans-serif;
+    color: rgb(128, 2, 98);
+}
+.ocatalogo {
+    font-family: "Montserrat", sans-serif;
+    color: rgb(183, 76, 138);
 }
 
-#menu-horizontal ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
+/* SOBRE O PROJETO*/
 
-#menu-horizontal ul li {
-    margin: 0 15px; 
-}
 
-.menuBotton {
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 3.5vh;
-    background-color: rgb(153, 51, 153);
-    border: 2px solid rgb(252, 2, 227);
-    border-radius: 10px;
-    font-weight: bolder;
-    color: rgb(9, 174, 203);
-    cursor: pointer;
-    text-decoration: none;
-    
-}
-
-.container {
-    display: flex;
-    align-items: flex-start;
-    margin: 20px;
-    max-width: 800px;
-    margin: 0 auto;
-}
-#inicio {
-    padding-top: 80px;
-}
-
-.texto {
-    width: 100%;
-    padding: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+.sobre {
+    padding-top: 50vh;
     text-align: center;
-    align-items: center;
 }
 
-.img-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    margin-left: 100px;
-
-}
-.grid img {
-    width: 400px;   
-    height: 500px;  
-    object-fit: cover;
-}
-.img-flex {
-    display: flex;
-    justify-content: center; /* Centraliza as imagens horizontalmente */
-    gap: 5px;
-    margin: 0 auto; /* Centraliza o contêiner */
-    width: 100%; /* Garante que o contêiner ocupe 100% da largura disponível */
-}
-.image{
-    width: 400px;
-    height: 500px;
+.title-sobre {
+    font-family: "Fredoka", sans-serif;
+    color: rgb(128, 2, 98);
 }
 
-.menuBotton:hover {
-    background-color: rgb(102, 54, 107);
+.Psobre {
+    font-family: "Montserrat", sans-serif;
+    color: rgb(183, 76, 138);
 }
